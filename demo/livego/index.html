@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery.js"></script>
+    <script src="video.js"></script>
+    <link href="video-js.css" rel="stylesheet">
+    <script>
+        videojs.options.flash.swf = "video-js.swf";
+    </script>
+</head>
+<body>
+<video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" width="800" height="600">
+    <source src='rtmp://localhost:1935/live/movie' type='rtmp/flv'/>
+</video>
+<script>
+    var player = videojs('my-video');
+    player.play();
+</script>
+</body>
+</html>
